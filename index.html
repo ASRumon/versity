@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ACS</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script>
+		// This function will redirect the user to a specific link based on the drop down menu selections
+        function redirect() {
+            // Get the values of the drop down menus
+            var topic = document.getElementById("topic").value;
+            var level = document.getElementById("level").value;
+            // Define the links for each combination of topic and level
+            var links = {
+                "Math-Beginner": "https://varsity23.aparsclassroom.com/Math/Paper-1/Chapter-Archive",
+                "Math-Advanced": "https://varsity23.aparsclassroom.com/Math/Paper-2/Chapter-Archive",
+                "Physics-Beginner": "https://varsity23.aparsclassroom.com/Physics/Paper-1/Chapter-Archive",
+                "Physics-Advanced": "https://varsity23.aparsclassroom.com/Physics/Paper-2/Chapter-Archive",
+                "Chemistry-Beginner": "https://varsity23.aparsclassroom.com/Chemistry/Paper-1/Chapter-Archive",
+                "Chemistry-Advanced": "https://varsity23.aparsclassroom.com/Chemistry/Paper-2/Chapter-Archive",
+                "Biology-Beginner": "hhttps://varsity23.aparsclassroom.com/Biology/Paper-1/Chapter-Archive",
+                "Biology-Advanced": "https://varsity23.aparsclassroom.com/Biology/Paper-2/Chapter-Archive"
+            };
+            // Get the link for the selected combination
+            var link = links[topic + "-" + level];
+            // Redirect the user to the link
+            window.location.href = link;
+        }
+	</script>
+</head>
+
+<body>
+	<img src="ACS.png" alt="" height="100 px">
+    <h1>Main Classes</h1>
+    <div class="container">
+        <form id="redirectForm">
+            <select id="subjectDropdown" class="rounded">
+                <option value="physics">Physics</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="biology">Biology</option>
+                <option value="math">Math</option>
+                <option value="english">English</option>
+                <option value="bangla">Bangla</option>
+
+
+            </select>
+
+            <select id="paperDropdown" class="rounded">
+                <option value="firstPaper">First Paper</option>
+                <option value="secondPaper">Second Paper</option>
+            </select>
+
+            <select id="chapterDropdown" class="rounded">
+                <!-- Options will be generated using JavaScript -->
+            </select>
+
+            <a rel="noopener" target="_blank">
+                <button type="button" id="enterButton" class="rounded">Enter</button>
+            </a>
+        </form>
+    </div>
+    <h1>Archive</h1>
+    <div class="container">
+        <!-- Create the first drop down menu for topic -->
+        <select id="topic" class="rounded">
+            <option value="Math">Math</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Biology">Biology</option>
+        </select>
+        <!-- Create the second drop down menu for level -->
+        <select id="level" class="rounded">
+            <option value="Beginner">1st Paper</option>
+            <option value="Advanced">2nd Paper</option>
+        </select>
+        <!-- Create the button that will call the redirect function -->
+        <button onclick="redirect()" class="rounded">Enter</button>
+    </div>
+
+    <div class="container1"><h3>Feeds(❌Not maintained)</h3><div id="noticeBar">
+        <!-- Images will be generated using JavaScript -->
+    </div></div>
+    
+    <a rel="noopener" target="_blank"><button id="openPopupButton1" class="rounded">Classes</button></a>
+        <a rel="noopener" target="_blank"><button id="openPopupButton2" class="rounded">Routine</button></a>
+       
+    <a href="https://www.facebook.com/groups/acsvarsity2023/" target="_blank"><button class="rounded">FB Group</button></a>
+    <a href="https://varsity23.aparsclassroom.com/profile" target="_blank"><button class="rounded">Webapp
+            profile</button></a>
+    <a href="https://acsdoubts.com/" target="_blank"><button class="rounded">ACS Doubts</button></a>
+    <a href="https://youtube.com/playlist?list=PLflLNZo6PFVDr6Ue_v_YTZ_XrPX4swQcH" target="_blank"><button class="rounded">Physics(Archive)</button></a>
+  <a href="https://youtube.com/playlist?list=PLcJGjF8QBSfQaL1l0YkIEBPow13bD6010" target="_blank"><button class="rounded">MediMission-10</button></a>
+    <!-- Popup containers -->
+    <div class="popup-overlay" id="popup1">
+        <div class="popup-content">
+            <iframe
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTOteabSSQCC2pp0xx6Dh-Y5Cq5bU26Nnz-y_kuPaP9gLuurWMj2XCg0P87gCFV5llvZbFmEbSUuEe4/pubhtml?fbclid=IwAR3EwExH2UApCidN6_eTk5dCkdahVRXvh2rQCX-Y9TEa8Mgo67_QywIc92Y"
+                width="900" height="500"></iframe>
+            <button id="closePopupButton1" class="rounded">Close</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="popup2">
+        <div class="popup-content">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQPerpNmBmrlkefCzdpeY49mJzjLMz0N6sgnl3HZJaTe6a2gaA5l46nq5HPi5R7Krl55hYDwC88USyo/pubhtml?gid=0&single=true" width="900"
+                height="500"></iframe>
+            <button id="closePopupButton2" class="rounded">Close</button>
+        </div>
+    </div>
+
+<div class="popup-overlay" id="popup3">
+        <div class="popup-content">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSzc3OEuqOqVn-ZdMDJ5BF0gYYK-LGFTpZ6NSaY__bGjTII_mW6nkXhtS9zshjt6pXnRlp4U648PRNd/pubhtml" width="900"
+                height="500"></iframe>
+            <button id="closePopupButton3" class="rounded">Close</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+<script>
+    const openPopupButton1 = document.getElementById('openPopupButton1');
+    const closePopupButton1 = document.getElementById('closePopupButton1');
+    const popup1 = document.getElementById('popup1');
+
+    const openPopupButton2 = document.getElementById('openPopupButton2');
+    const closePopupButton2 = document.getElementById('closePopupButton2');
+    const popup2 = document.getElementById('popup2');
+
+    const openPopupButton3 = document.getElementById('openPopupButton3');
+    const closePopupButton3 = document.getElementById('closePopupButton3');
+    const popup3 = document.getElementById('popup3');
+
+
+    openPopupButton1.addEventListener('click', function () {
+        popup1.style.display = 'block';
+    });
+
+    closePopupButton1.addEventListener('click', function () {
+        popup1.style.display = 'none';
+    });
+
+    openPopupButton2.addEventListener('click', function () {
+        popup2.style.display = 'block';
+    });
+
+    closePopupButton2.addEventListener('click', function () {
+        popup2.style.display = 'none';
+    });
+
+    openPopupButton3.addEventListener('click', function () {
+        popup3.style.display = 'block';
+    });
+
+    closePopupButton3.addEventListener('click', function () {
+        popup3.style.display = 'none';
+    });
+</script>
+
+</html>

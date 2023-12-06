@@ -1,0 +1,151 @@
+body {
+    background-color: #cce7ff; /* Blue background */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.658);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 700px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.container1 {
+    background-color: rgba(255, 255, 255, 0.658);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 900px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.select {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background for dropdown menus */
+    border: 0px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.rounded {
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #0383df; /* Blue button background color */
+    color: white;
+    cursor: pointer;
+}
+
+.rounded:hover {
+    background-color: #022136d8; /* Darker blue on button hover */
+}
+.notice-image {
+     /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+}
+
+#noticeBar {
+    overflow-x: auto; /* Enable horizontal scrolling when the content overflows */
+    white-space: nowrap; /* Prevent line breaks between images */
+}
+
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/* Styling for the popup content */
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}body {
+    background-color: #cce7ff; /* Blue background */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.658);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 700px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.container1 {
+    background-color: rgba(255, 255, 255, 0.658);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 900px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.select {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background for dropdown menus */
+    border: 0px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.rounded {
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #0383df; /* Blue button background color */
+    color: white;
+    cursor: pointer;
+}
+
+.rounded:hover {
+    background-color: #022136d8; /* Darker blue on button hover */
+}
+.notice-image {
+     /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+}
+
+#noticeBar {
+    overflow-x: auto; /* Enable horizontal scrolling when the content overflows */
+    white-space: nowrap; /* Prevent line breaks between images */
+}
+
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/* Styling for the popup content */
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
